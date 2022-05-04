@@ -1,23 +1,23 @@
 body {
-  background: linear-gradient(156deg, rgba(242,249,255,0.8) 50%,
-                                      rgba(201,228,255,0.8) 100%);
-  background-attachment: fixed;
+  background-image: url("./images/beautiful-paradise.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background:
+  background-attachment: fixed; */
   font-family: 'Libre Franklin', sans-serif;
   font-size: 1rem;
-  color: rgb(85, 85, 85);
+  color: rgb(229, 229, 229);
 }
-@media (max-width: 1880px) {
+@media (max-width: 2460px){
   /* Pour un écran < 960px, cette classe CSS s'applique */
   .hero-card {
     width: 800px;
-    height: 500px;
   }
 }
 @media (max-width: 960px) {
   /* Pour un écran < 960px, cette classe CSS s'applique */
   .hero-card {
     width: 600px;
-    height: 500px;
   }
 }
 
@@ -25,7 +25,6 @@ body {
   /* Pour un écran < 720px, cette classe CSS s'applique */
   .hero-card {
     width: 400px;
-    height: 600px;
   }
 }
 
@@ -33,11 +32,11 @@ body {
   /* Pour un écran < 540px, cette classe CSS s'applique */
   .hero-card {
     width: 280px;
-    height: 600px;
   }
 }
 h1, h2, h3 {
-  color: rgb(100, 100, 100);
+  color: rgb(229, 229, 229);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.583);
 }
 
 h1 {
@@ -56,78 +55,89 @@ h3 {
 }
 a {
   text-decoration: none;
-  color: rgb(100, 100, 100)
+  color: rgb(229, 229, 229)
 }
 .hero-card {
-  color: rgb(100, 100, 100);
-	animation: blur_img 0.6s linear;
-  animation-fill-mode: forwards;
+  color: rgb(229, 229, 229);
+	animation: blur_img 1s linear;
   text-align: center;
   margin-top: 30px;
-  margin: 30px auto 0 auto;
+  margin: 20px auto 0 auto;
   padding: 30px;
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.3);
-  box-shadow: 5px 5px 15px rgba(0,0,0,0.2) ;
-  backdrop-filter: blur(40px);
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow:  -9px -9px 13px 2px rgba(0,0,0,0.4),
+              9px 9px 16px 0px rgba(0,0,0,0.4);
+  /* box-shadow: -9px -9px 13px 2px #42bce461, 9px 9px 16px 0px #adc5d1c8; */
+  backdrop-filter: blur(1px);
 }
 @keyframes blur_img {
 	0%		{filter: blur(1.5rem);}
 	100%	{filter: blur(0rem);}
+}
+.hero-card h1 span {
+  -webkit-text-stroke: 1px white;
+  color: transparent;
 }
 .hero-card img {
   border-radius: 50%;
   width: 200px;
   height: 200px;
   object-fit: cover;
-  animation: blur_img 0.6s linear;
+  animation: blur_img 1s linear;
   animation-fill-mode: forwards;
+}
+.hero-card p {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.583);
 }
 .btn-result {
   display: flex;
   flex-direction: column;
   overflow: hidden;
   font-size: 1.3rem;
-  animation: blur_img 0.6s linear;
+  animation: blur_img 1s linear;
   animation-fill-mode: forwards;
   margin: 40px auto;
   border-radius: 3px;
   text-decoration: none;
-  border: 2.5px solid rgb(120, 120, 120);
+  border: 2.5px solid rgb(229, 229, 229);
   width: 220px;
   height: 26px;
   padding: 7px 10px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.583);
 }
 .btn-result span {
   display: inline-block;
   transform: translateY(0px);
-  transition: 0.6s ease;
+  transition: 1s ease;
 }
 .btn-result:hover span {
   display: inline-block;
   transform: translateY(-50px);
-  transition: 0.6s ease;
+  transition: 1s ease;
 }
 .btn-result:hover {
   border: 2.5px solid #1095c1;
-  transition: 0.6s ease;
+  transition: 1s ease;
 }
 .btn-result:hover::after {
   transform: translateY(-24px);
-  transition: 0.6s ease-out;
+  transition: 1s ease-out;
 }
 .btn-result::after {
   content:"Amazing! Right?";
   color: #1095c1;
   text-align: center;
-  transition: 0.6s ease;
+  transition: 1s ease;
   transform: translateY(24px)
 }
 .list-inline {
-  animation: blur_img 0.6s linear;
+  animation: blur_img 1s linear;
   list-style: none;
   padding-left: 0px;
   text-align: center;
+  margin: 10px auto;
+  text-shadow: 0.3px 0.3px 0.3px rgba(133, 131, 131, 0.222);
 }
 .list-inline span {
   font-size: 1.5rem;
