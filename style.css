@@ -1,0 +1,146 @@
+body {
+  background: linear-gradient(156deg, rgba(242,249,255,0.8) 50%,
+                                      rgba(201,228,255,0.8) 100%);
+  background-attachment: fixed;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 1rem;
+  color: rgb(85, 85, 85);
+}
+@media (max-width: 1880px) {
+  /* Pour un écran < 960px, cette classe CSS s'applique */
+  .hero-card {
+    width: 800px;
+    height: 500px;
+  }
+}
+@media (max-width: 960px) {
+  /* Pour un écran < 960px, cette classe CSS s'applique */
+  .hero-card {
+    width: 600px;
+    height: 500px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* Pour un écran < 720px, cette classe CSS s'applique */
+  .hero-card {
+    width: 400px;
+    height: 600px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* Pour un écran < 540px, cette classe CSS s'applique */
+  .hero-card {
+    width: 280px;
+    height: 600px;
+  }
+}
+h1, h2, h3 {
+  color: rgb(100, 100, 100);
+}
+
+h1 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  transform: scaleY(0.95);
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+  letter-spacing: 0.5px;
+}
+a {
+  text-decoration: none;
+  color: rgb(100, 100, 100)
+}
+.hero-card {
+  color: rgb(100, 100, 100);
+	animation: blur_img 0.6s linear;
+  animation-fill-mode: forwards;
+  text-align: center;
+  margin-top: 30px;
+  margin: 30px auto 0 auto;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.2) ;
+  backdrop-filter: blur(40px);
+}
+@keyframes blur_img {
+	0%		{filter: blur(1.5rem);}
+	100%	{filter: blur(0rem);}
+}
+.hero-card img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  animation: blur_img 0.6s linear;
+  animation-fill-mode: forwards;
+}
+.btn-result {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-size: 1.3rem;
+  animation: blur_img 0.6s linear;
+  animation-fill-mode: forwards;
+  margin: 40px auto;
+  border-radius: 3px;
+  text-decoration: none;
+  border: 2.5px solid rgb(120, 120, 120);
+  width: 220px;
+  height: 26px;
+  padding: 7px 10px;
+}
+.btn-result span {
+  display: inline-block;
+  transform: translateY(0px);
+  transition: 0.6s ease;
+}
+.btn-result:hover span {
+  display: inline-block;
+  transform: translateY(-50px);
+  transition: 0.6s ease;
+}
+.btn-result:hover {
+  border: 2.5px solid #1095c1;
+  transition: 0.6s ease;
+}
+.btn-result:hover::after {
+  transform: translateY(-24px);
+  transition: 0.6s ease-out;
+}
+.btn-result::after {
+  content:"Amazing! Right?";
+  color: #1095c1;
+  text-align: center;
+  transition: 0.6s ease;
+  transform: translateY(24px)
+}
+.list-inline {
+  animation: blur_img 0.6s linear;
+  list-style: none;
+  padding-left: 0px;
+  text-align: center;
+}
+.list-inline span {
+  font-size: 1.5rem;
+  color: #1095c1;
+}
+.list-inline li {
+    display: inline-block;
+    padding: 0px 24px;
+}
+.list-inline ul {
+    display: inline-block;
+    padding: 0px;
+}
+.list-inline a{
+  color: #1095c1;
+}
